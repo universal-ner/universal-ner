@@ -1,5 +1,6 @@
-### Hi there 👋
+## UniversalNER 🚀
 
+### Thanks for your interest! We'll release the code for using UniversalNER by EOW (08/13/2023)
 <!--
 **universal-ner/universal-ner** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
