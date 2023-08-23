@@ -15,6 +15,8 @@
 
 ## Install
 
+This project relies on `vllm`. Ensure you have `gcc` version 5 or later, and CUDA versions between 11.0 and 11.8, as specified in the [installation requirements for vllm](https://vllm.readthedocs.io/en/latest/getting_started/installation.html).
+
 1. Clone this repository and navigate to the folder
 ```bash
 git clone https://github.com/universal-ner/universal-ner.git
