@@ -44,10 +44,19 @@ python -m src.serve.gradio_server \
 
 ### CLI Inference
 
-Run the following command:
+Run the following command to use vllm for inference:
 
 ```Shell
 python -m src.serve.cli \
+    --model_path Universal-NER/UniNER-7B-type \
+    --tensor_parallel_size 1 \
+    --max_input_length 512
+```
+
+Run the following command to use Huggingface Transformers for inference:
+
+```Shell
+python -m src.serve.hf \
     --model_path Universal-NER/UniNER-7B-type \
     --tensor_parallel_size 1 \
     --max_input_length 512
