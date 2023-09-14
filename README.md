@@ -62,6 +62,10 @@ python -m src.serve.hf \
     --max_input_length 512
 ```
 
+## Finetuning
+
+Our training code is adapted from [FastChat](https://github.com/lm-sys/FastChat). See [here](https://github.com/universal-ner/universal-ner/tree/main/src/train) for how to finetune the LLama base model with UniversalNER data.
+
 ## Citation
 
 If you find UniversalNER helpful for your research and applications, please cite using this BibTeX:
