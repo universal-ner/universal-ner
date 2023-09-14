@@ -6,6 +6,7 @@
 [[Project Page](https://universal-ner.github.io/)] [[Demo](https://universal-ner.github.io/)] [[Paper](https://arxiv.org/abs/2308.03279)] [[Data](https://huggingface.co/Universal-NER)] [[Model](https://huggingface.co/Universal-NER)]
 
 ## Release
+- **[9/14]** We add our training code for finetuning the LLama base model with UniversalNER data.
 - **[8/11]** We release two more UniNER models, [UniNER-7B-type-sup](https://huggingface.co/Universal-NER/UniNER-7B-type-sup) and [UniNER-7B-all](https://huggingface.co/Universal-NER/UniNER-7B-all), which were finetuned on ChatGPT-generated data and 40 supervised datasets of various domains and offers better NER performance.
 - **[8/10]** We have released the inference code for running the model checkpoints. The code for pretraining and evaluation will be released soon.
 
