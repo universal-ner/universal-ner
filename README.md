@@ -6,6 +6,7 @@
 [[Project Page](https://universal-ner.github.io/)] [[Demo](https://universal-ner.github.io/)] [[Paper](https://arxiv.org/abs/2308.03279)] [[Data](https://huggingface.co/Universal-NER)] [[Model](https://huggingface.co/Universal-NER)]
 
 ## Release
+- **[12/4]** We add the evaluation code for NER datasets.
 - **[9/14]** We add our training code for finetuning the LLama base model with UniversalNER data.
 - **[8/11]** We release two more UniNER models, [UniNER-7B-type-sup](https://huggingface.co/Universal-NER/UniNER-7B-type-sup) and [UniNER-7B-all](https://huggingface.co/Universal-NER/UniNER-7B-all), which were finetuned on ChatGPT-generated data and 40 supervised datasets of various domains and offers better NER performance.
 - **[8/10]** We have released the inference code for running the model checkpoints. The code for pretraining and evaluation will be released soon.
@@ -66,6 +67,19 @@ python -m src.serve.hf \
 ## Finetuning
 
 Our training code is adapted from [FastChat](https://github.com/lm-sys/FastChat). See [here](https://github.com/universal-ner/universal-ner/tree/main/src/train) for how to finetune the LLama base model with UniversalNER data.
+
+## Evaluation
+
+To execute the evaluation process:
+
+```Shell
+python -m src.eval.evaluate \
+    --model_path Universal-NER/UniNER-7B-type \
+    --data_path ./src/eval/test_data/CrossNER_AI.json \
+    --tensor_parallel_size 1
+```
+
+Due to licensing restrictions associated with many NER datasets used in our evaluation, only the CrossNER and MIT datasets are included in this repository.
 
 ## Citation
 
